@@ -4,6 +4,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Home from "../components/pages/Home";
 import LoginForm from "../components/pages/LogIn";
 import SignUpForm from "../components/pages/SignUp";
+import Books from "../components/pages/Books";
 import PrivateRoute from "../helpers/PrivateRoute";
 
 export default class Routes extends Component {
@@ -11,9 +12,10 @@ export default class Routes extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <PrivateRoute exact path="/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/login" component={LoginForm} />
           <Route path="/signup" component={SignUpForm} />
+          <PrivateRoute path="/books" component={Books} />
         </Switch>
       </BrowserRouter>
     );

@@ -57,7 +57,6 @@ export const login = (email, password) => (dispatch) => {
   Api.post("/", reqBody)
     .then((res) => {
       if (res.data.data.login) {
-        console.log(res.data.data.login);
         // get token
         const { token } = res.data.data.login;
         // save token to local storage
