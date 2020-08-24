@@ -6,7 +6,9 @@ const typeDefsRoot = gql`
     books: [Book] @isAuthenticated
   }
   extend type Mutation {
-    createBook(title: String!): Book
+    createBook(title: String!): Book @isAuthenticated
+    updateBook(id: ID!, title: String!): Book @isAuthenticated
+    deleteBook(id: ID!): Book @isAuthenticated
   }
 `;
 
