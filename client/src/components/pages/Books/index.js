@@ -1,10 +1,26 @@
 import React from "react";
-// import PropTypes from "prop-types";
+import { Grid } from "semantic-ui-react";
 
-const Books = (props) => {
-  return <div>Books</div>;
+import Welcome from "./Welcome";
+import Welcome2 from "./Welcome2";
+import AllBooks from "./AllBooks";
+import UsersBooks from "./UsersBooks";
+import Footer from "../../layouts/Footer";
+
+const Books = () => {
+  return (
+    <>
+      <div style={{ padding: "2rem" }}>
+        <Grid>
+          <Welcome />
+          <Welcome2 />
+          <UsersBooks />
+          <AllBooks />
+        </Grid>
+      </div>
+      <Footer />
+    </>
+  );
 };
-
-Books.propTypes = {};
 
 export default Books;

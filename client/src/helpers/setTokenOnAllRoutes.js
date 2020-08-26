@@ -1,12 +1,12 @@
-import axios from "axios";
+import Api from "../config/api";
 
 const setTokenOnAllRoutes = (token) => {
   if (token) {
     // set the token to all request to a page
-    axios.defaults.headers.common["x-token"] = token;
+    Api.defaults.headers.common["x-token"] = token;
   } else {
     // delete auth token from local storage
-    delete axios.defaults.headers.common["x-token"];
+    delete Api.defaults.headers.common["x-token"];
   }
 };
 

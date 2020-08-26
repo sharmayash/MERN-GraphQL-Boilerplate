@@ -14,7 +14,7 @@ const Home = ({ auth, logOutUser }) => {
       {isAuthenticated ? (
         <Grid.Row columns="equal">
           <Grid.Column>
-            <Header as="h2">
+            <Header as="h2" style={{ fontFamily: "Josefin Sans" }}>
               <>Welcome {user.userName}</>
             </Header>
           </Grid.Column>
@@ -56,7 +56,7 @@ const Home = ({ auth, logOutUser }) => {
       <Grid.Row verticalAlign="top">
         <Grid.Column>
           <Segment vertical>
-            <Header size="huge">
+            <Header size="huge" style={{ fontFamily: "Josefin Sans" }}>
               Get Started by Cloning the template repository from{" "}
               <a
                 target="_blank"
@@ -69,7 +69,7 @@ const Home = ({ auth, logOutUser }) => {
           </Segment>
           <Segment vertical>OR</Segment>
           <Segment vertical>
-            <Header size="huge">
+            <Header size="huge" style={{ fontFamily: "Josefin Sans" }}>
               Go To the <Link to="/books">Books App</Link>
             </Header>
           </Segment>
