@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { Icon, Grid, Header, Button, Segment } from "semantic-ui-react";
 
@@ -48,16 +49,7 @@ export const UsersBooks = ({ book, getUsersBooks, deleteABook }) => {
 
   if (userBooks.length > 0) {
     userBookComp = (
-      <div
-        style={{
-          height: "50vh",
-          overflow: "auto",
-          "&::WebkitScrollbar": {
-            appearance: "none",
-            height: 0,
-          },
-        }}
-      >
+      <div className="box">
         <Segment.Group stacked>
           {userBooks.map((book) => (
             <Segment clearing textAlign="center" key={book.id}>
@@ -108,6 +100,19 @@ export const UsersBooks = ({ book, getUsersBooks, deleteABook }) => {
           <Button.Content visible>Add More</Button.Content>
           <Button.Content hidden>
             <Icon name="add square"></Icon>
+          </Button.Content>
+        </Button>
+        <Button
+          size="big"
+          color="twitter"
+          animated="fade"
+          as={Link}
+          to="/allbooks"
+          style={{ margin: "2rem" }}
+        >
+          <Button.Content visible>View all books</Button.Content>
+          <Button.Content hidden>
+            <Icon name="arrow right"></Icon>
           </Button.Content>
         </Button>
       </Grid.Column>

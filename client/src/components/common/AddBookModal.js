@@ -14,8 +14,9 @@ const AddBookModal = ({ open, closeModal, addABook }) => {
 
   const handleAdd = () => {
     if (title.length === 0) return;
-    closeModal();
     addABook(title);
+    closeModal();
+    setTitle("");
   };
 
   return (

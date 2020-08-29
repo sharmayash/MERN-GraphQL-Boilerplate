@@ -5,6 +5,8 @@ import Home from "../components/pages/Home";
 import LoginForm from "../components/pages/LogIn";
 import SignUpForm from "../components/pages/SignUp";
 import Books from "../components/pages/Books";
+import AllBooks from "../components/pages/AllBooks";
+
 import PrivateRoute from "../helpers/PrivateRoute";
 
 export default class Routes extends Component {
@@ -16,6 +18,7 @@ export default class Routes extends Component {
           <Route path="/login" component={LoginForm} />
           <Route path="/signup" component={SignUpForm} />
           <PrivateRoute path="/books" component={Books} />
+          <PrivateRoute path="/allbooks" component={AllBooks} />
         </Switch>
       </BrowserRouter>
     );

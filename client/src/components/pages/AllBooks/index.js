@@ -1,9 +1,7 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
 
-import Welcome from "./Welcome";
-import Welcome2 from "./Welcome2";
-import UsersBooks from "./UsersBooks";
+import AllBooks from "./AllBooks";
 import Footer from "../../layouts/Footer";
 
 const Books = () => {
@@ -11,9 +9,7 @@ const Books = () => {
     <>
       <div style={{ padding: "2rem" }}>
         <Grid>
-          <Welcome />
-          <Welcome2 />
-          <UsersBooks />
+          <AllBooks />
         </Grid>
       </div>
       <Footer />

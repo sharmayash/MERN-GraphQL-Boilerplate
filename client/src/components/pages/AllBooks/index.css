@@ -1,0 +1,9 @@
+.box {
+  height: 60vh;
+  overflow: auto;
+}
+
+.box::-webkit-scrollbar {
+  appearance: none;
+  height: 0;
+}

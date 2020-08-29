@@ -23,7 +23,7 @@ const Welcome = () => {
         </Header>
       </Grid.Column>
       <Grid.Column mobile={16} tablet={8} computer={8}>
-        <Image src={bookHome} />
+        <Image src={bookHome} centered/>
       </Grid.Column>
     </Grid.Row>
   );

@@ -14,25 +14,25 @@ export default function Footer() {
                 <List.Item as="a">Sitemap</List.Item>
                 <List.Item as="a">Contact Us</List.Item>
                 <List.Item as="a">Religious Ceremonies</List.Item>
-                <List.Item as="a">Gazebo Plans</List.Item>
+                <List.Item as="a">Our Literature Festival</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
               <Header inverted as="h4" content="Services" />
               <List link inverted>
-                <List.Item as="a">Banana Pre-Order</List.Item>
                 <List.Item as="a">DNA FAQ</List.Item>
                 <List.Item as="a">How To Access</List.Item>
-                <List.Item as="a">Favorite X-Men</List.Item>
+                <List.Item as="a">Banana Pre-Order</List.Item>
+                <List.Item as="a">Editor's Favourite Books</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as="h4" inverted>
-                Footer Header
+                Books App
               </Header>
               <p>
-                Extra space for a call to action inside the footer that could
-                help re-engage users.
+                A platform where users can find the details of books added by
+                only verified users and writers.
               </p>
             </Grid.Column>
           </Grid.Row>
